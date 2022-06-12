@@ -1,303 +1,202 @@
 /*General*/
+* {
+  /*reseteo de estilo predeterminado del navegador*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 @font-face {
-    font-family:"miFuente";
-    src: url(../fuentes/magnetob.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
+  font-family: "miFuente";
+  src: url(../fuentes/magnetob.ttf);
+  font-weight: normal;
+  font-style: normal; }
 
-body{
-    background: #1D202B;
-	color: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+body {
+  background: #1D202B;
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
-
-.backgroundImage{
-        padding: 0px 0PX 200px;
-        background-image:url(../Imagenes/foo-fighters1.jpg) ;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
-}
+.backgroundImage {
+  padding: 0px 0PX 200px;
+  background-image: url(../Imagenes/foo-fighters1.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
 
 /*Aca empieza el header*/
-
-header{
-    background-color: black;
-    position: sticky;
-    top: 0%;
-    z-index: 1;
-    border-top: double red 10px;
-    border-right: double red 10px;
-    border-bottom: double red 10px;
-    border-left: double red 10px;
+header {
+  background-color: black;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  border-top: double red 10px;
+  border-right: double red 10px;
+  border-bottom: double red 10px;
+  border-left: double red 10px;
+  display: grid;
+  grid-template-rows: 56px; }
+  header #cabecera {
     display: grid;
-    grid-template-rows: 56px;
-}
- #cabecera{
-     display: grid;
-    grid-template-columns: 12fr;
- }
-
-
-#cabecera h1{
+    grid-template-columns: 12fr; }
+  header h1 {
     font-family: "miFuente";
     padding: -40px 10px 10px -40px;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 50px;
-    text-align: center;
-}
-/*CSS DE MI NAVBAR*/
-/*#navegador{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 0px 0px;
-    margin: 10px 0px 0px 0px ;
-   
-}
+    text-align: center; }
 
-#navegador .navDer{
-    background-color: brown;
-}
-
-#navegador div ul{
-     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;  
-}
-
-#navegador div ul li{
-    list-style: none;
-}
-
-#navegador div ul li a{
-    text-decoration: none;
-    color: white;
-}*/
-/*Aca empiezan los textos*/
-
-
-.text{
-    display: flex;
-    flex-wrap: wrap;
-}
-#memorial{
-    display: grid;
-    grid-template-columns: 80%;
-    margin-top: 80px;
-    justify-content: center;
-    background-color: black;
-    opacity: 0.8;
-}
-
-#bio{
-    display: grid;
-    grid-template-columns: 80%;
-    justify-content: center;
-    background-color: black;
-    opacity: 0.8;
-   
-}
-
-h2{
+#memorial {
+  display: grid;
+  grid-template-columns: 80%;
+  margin-top: 80px;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.8; }
+  #memorial h2 {
     padding: 10px 0px;
-    color:rgb(224, 110, 110);
-    text-align: center;
-}
- 
+    color: #e06e6e;
+    text-align: center; }
+  #memorial .text {
+    display: flex;
+    flex-wrap: wrap; }
+    #memorial .text p {
+      text-align: center;
+      color: white;
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
 
-p{
-    text-align: center;
-    color: white;
-    line-height: 20px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-
-
+#bio {
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.8; }
+  #bio h2 {
+    padding: 10px 0px;
+    color: #e06e6e;
+    text-align: center; }
+  #bio .text {
+    display: flex;
+    flex-wrap: wrap; }
+    #bio .text p {
+      text-align: center;
+      color: white;
+      line-height: 20px;
+      text-align: justify;
+      text-justify: inter-word; }
 
 /*Aqui empieza el footer*/
-footer{
-    background-color: black;
-}
-
-#contactUs{
-    color: white;
-}
-
-#footerRedes{
-        display: flex;    
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-        justify-content: flex-end;
-        font-size: 30px;   
-       
-}
-
-.fa{
-    text-decoration: none;
-    margin: 5px 20px;
-    color: white;
-    
-}
-
-.facebook:hover{
-    opacity: 0.7;
-}
-.twitter:hover{
-    opacity: 0.7;
-}
-.spotify:hover{
-    opacity: 0.7;
-}
-
-.facebook {
-    padding: 0px;
-    margin:0px 20px 0px 0px;
-    background: #3B5998;
-    color: white;
-    text-decoration: none;
-    border-radius: 14px 14px 14px 14px;
-}
-
-
-
-.twitter {
-    padding: 0px;
-    margin: 0px 0px 0px 0px ;
-    background: #55ACEE;
-    color: white;
-    border-radius: 14px 14px 14px 14px;
-    
-}
-
-.spotify{
-    padding: 0px;
-    margin:0px 20px 0px 20px ;
-    background: #0dc416;
-    color: rgb(255, 255, 255);
-    border-radius: 14px 14px 14px 14px;
-}
-
-
-
-strong{
+footer {
+  background-color: black; }
+  footer #contactUs {
+    color: white; }
+  footer #footerRedes {
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: flex-end;
+    font-size: 30px; }
+    footer #footerRedes .fa {
+      text-decoration: none;
+      margin: 5px 20px;
+      color: white; }
+    footer #footerRedes .facebook {
+      padding: 0px;
+      margin: 0px 20px 0px 0px;
+      background: #3B5998;
+      color: white;
+      text-decoration: none;
+      border-radius: 14px 14px 14px 14px; }
+      footer #footerRedes .facebook:hover {
+        opacity: 0.7; }
+    footer #footerRedes .twitter {
+      padding: 0px;
+      margin: 0px 0px 0px 0px;
+      background: #55ACEE;
+      color: white;
+      border-radius: 14px 14px 14px 14px; }
+      footer #footerRedes .twitter:hover {
+        opacity: 0.7; }
+    footer #footerRedes .spotify {
+      padding: 0px;
+      margin: 0px 20px 0px 20px;
+      background: #0dc416;
+      color: white;
+      border-radius: 14px 14px 14px 14px; }
+      footer #footerRedes .spotify:hover {
+        opacity: 0.7; }
+  footer strong {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     text-align: justify;
-    color: white;  
-}
-
-
+    color: white; }
 
 /*Concerts de css*/
-
-
-
 .contenedor {
-	width: 90%;
-	max-width: 1400px;
-	margin: auto;
-    margin-top: 20px;
-	padding: 40px 0;
-	font-family: 'Roboto', sans-serif;
-
-}
-
-
-.titulo {
-	font-size: 24px;
-	padding: 20px 0;
-}
-
-.contenedor-conciertos {
-	display: grid;
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 40px 0;
+  font-family: 'Roboto', sans-serif; }
+  .contenedor .contenedor-conciertos {
+    display: grid;
     grid-template-columns: 3fr;
-    grid-gap: 20px;
-    
-}
+    grid-gap: 20px; }
+    .contenedor .contenedor-conciertos .card {
+      border-radius: 10px;
+      min-height: 200px;
+      font-weight: bold;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center center; }
+      .contenedor .contenedor-conciertos .card .textos {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+      .contenedor .contenedor-conciertos .card:hover {
+        opacity: 0.5;
+        animation: pulse;
+        animation-duration: 2s; }
 
-.card {
-	border-radius: 10px;
-	min-height: 200px;
-	font-weight: bold;
-	padding: 20px;
-	position: relative;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
-    
-	
-}
-
-.card .textos{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card:hover{
-    opacity: 0.5;
-    animation: pulse; 
-    animation-duration: 2s; 
-}
-/*Merch Css  Aun en proceso*/
-
-
-.productos-div{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-.img{
-    transition: height 3s, width 3s;
-}
-
-.img:hover{
-    opacity: 0.7;  
-}
-
-.productos-ff{
+/*Merch Css*/
+.productos-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px; }
+  .productos-div .productos-ff {
     width: 90%;
-	max-width: 500px;
-	margin: auto;
-	padding: 40px 0;
-}
-button {
-    width: 80px;
-    height: 30px;
-    background: white;
-    transition: width 1s;
-    transition: height 1s;
- }
-button:hover{
-    opacity: 0.5;
-    width: 110px;
-    height: 70px;
-} 
+    max-width: 500px;
+    margin: auto;
+    padding: 40px 0; }
+    .productos-div .productos-ff .img {
+      transition: height 3s, width 3s; }
+      .productos-div .productos-ff .img:hover {
+        opacity: 0.7; }
+    .productos-div .productos-ff button {
+      width: 80px;
+      height: 30px;
+      background: white;
+      transition: width 1s;
+      transition: height 1s; }
+      .productos-div .productos-ff button:hover {
+        opacity: 0.5;
+        width: 110px;
+        height: 70px; }
 
 /*Acas empiezan las Medias Queries*/
-
 @media screen and (min-width: 0px) and (max-width: 767px) {
-    #cabeceraX{
-        display:none;
-    }
-    #navegador{
-        display: none;
-    }
-}
+  #cabeceraX {
+    display: none; }
+  #navegador {
+    display: none; } }
 
-@media screen and (min-width:768px) and (max-width:1400px){
-    #cabeceraQ{
-        display: none;
-    }
-    
-}
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  #cabeceraQ {
+    display: none; } }

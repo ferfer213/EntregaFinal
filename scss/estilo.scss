@@ -1,0 +1,264 @@
+/*General*/
+*{
+    /*reseteo de estilo predeterminado del navegador*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:"miFuente";
+    src: url(../fuentes/magnetob.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: #1D202B;
+	color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.backgroundImage{
+    padding: 0px 0PX 200px;
+    background-image:url(../Imagenes/foo-fighters1.jpg) ;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Aca empieza el header*/
+
+header{
+    background-color: black;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    border-top: double red 10px;
+    border-right: double red 10px;
+    border-bottom: double red 10px;
+    border-left: double red 10px;
+    display: grid;
+    grid-template-rows: 56px;
+    
+    #cabecera{
+            display: grid;
+           grid-template-columns: 12fr;
+        }
+          h1{
+                font-family: "miFuente";
+                padding: -40px 10px 10px -40px;
+                color: rgb(255, 255, 255);
+                font-size: 50px;
+                text-align: center;
+
+            }
+        }
+
+
+    #memorial{
+            display: grid;
+            grid-template-columns: 80%;
+            margin-top: 80px;
+            justify-content: center;
+            background-color: black;
+            opacity: 0.8;
+        h2{
+            padding: 10px 0px;
+            color:rgb(224, 110, 110);
+            text-align: center;
+        }
+        .text{
+            display: flex;
+            flex-wrap: wrap;
+            p{
+                text-align: center;
+                color: white;
+                line-height: 20px;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+            
+        }
+        }
+    
+  
+        #bio{
+            display: grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+            background-color: black;
+            opacity: 0.8;
+            h2{
+                padding: 10px 0px;
+                color:rgb(224, 110, 110);
+                text-align: center;
+            }
+            .text{
+                display: flex;
+                flex-wrap: wrap;
+            p{
+                text-align: center;
+                color: white;
+                line-height: 20px;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+        }
+           
+        }
+    
+
+
+
+/*Aqui empieza el footer*/
+
+footer{
+    background-color: black;
+    #contactUs{
+        color: white;
+    }
+    #footerRedes{
+        display: flex;    
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        justify-content: flex-end;
+        font-size: 30px;   
+        .fa{
+            text-decoration: none;
+            margin: 5px 20px;
+            color: white;
+            
+            }
+            .facebook {
+                padding: 0px;
+                margin:0px 20px 0px 0px;
+                background: #3B5998;
+                color: white;
+                text-decoration: none;
+                border-radius: 14px 14px 14px 14px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            .twitter {
+                padding: 0px;
+                margin: 0px 0px 0px 0px ;
+                background: #55ACEE;
+                color: white;
+                border-radius: 14px 14px 14px 14px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            .spotify{
+                padding: 0px;
+                margin:0px 20px 0px 20px ;
+                background: #0dc416;
+                color: rgb(255, 255, 255);
+                border-radius: 14px 14px 14px 14px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            
+        }
+}
+    strong{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        text-align: justify;
+        color: white;  
+}
+
+}
+
+/*Concerts de css*/
+
+.contenedor {
+	width: 90%;
+	max-width: 1400px;
+	margin: auto;
+    margin-top: 20px;
+	padding: 40px 0;
+	font-family: 'Roboto', sans-serif;
+    
+        .contenedor-conciertos {
+            display: grid;
+            grid-template-columns: 3fr;
+            grid-gap: 20px;
+            .card {
+                border-radius: 10px;
+                min-height: 200px;
+                font-weight: bold;
+                padding: 20px;
+                position: relative;
+                overflow: hidden;
+                background-size: cover;
+                background-position: center center;
+                .textos{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                }
+                &:hover{
+                    opacity: 0.5;
+                    animation: pulse; 
+                    animation-duration: 2s; 
+                }
+            }
+        }
+    }
+
+
+/*Merch Css*/
+
+.productos-div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    .productos-ff{
+        width: 90%;
+        max-width: 500px;
+        margin: auto;
+        padding: 40px 0;
+        .img{
+        transition: height 3s, width 3s;
+        &:hover{
+            opacity: 0.7;}
+                 }
+        button {
+                    width: 80px;
+                    height: 30px;
+                    background: white;
+                    transition: width 1s;
+                    transition: height 1s;
+                    &:hover{
+                        opacity: 0.5;
+                        width: 110px;
+                        height: 70px;
+                    } 
+            }
+        }
+    }
+
+
+/*Acas empiezan las Medias Queries*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    #cabeceraX{
+        display:none;
+    }
+    #navegador{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1400px){
+    #cabeceraQ{
+        display: none;
+    }
+    
+}
