@@ -1,4 +1,11 @@
 /*General*/
+@mixin text() {
+    display: grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+            background-color: black;
+            opacity: 0.8;
+}
 *{
     /*reseteo de estilo predeterminado del navegador*/
     padding: 0;
@@ -57,12 +64,9 @@ header{
 
 
     #memorial{
-            display: grid;
-            grid-template-columns: 80%;
+            @include text();
             margin-top: 80px;
-            justify-content: center;
-            background-color: black;
-            opacity: 0.8;
+           
         h2{
             padding: 10px 0px;
             color:rgb(224, 110, 110);
@@ -84,11 +88,7 @@ header{
     
   
         #bio{
-            display: grid;
-            grid-template-columns: 80%;
-            justify-content: center;
-            background-color: black;
-            opacity: 0.8;
+            @include text;
             h2{
                 padding: 10px 0px;
                 color:rgb(224, 110, 110);

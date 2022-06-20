@@ -48,10 +48,10 @@ header {
 #memorial {
   display: grid;
   grid-template-columns: 80%;
-  margin-top: 80px;
   justify-content: center;
   background-color: black;
-  opacity: 0.8; }
+  opacity: 0.8;
+  margin-top: 80px; }
   #memorial h2 {
     padding: 10px 0px;
     color: #e06e6e;
