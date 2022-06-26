@@ -254,6 +254,9 @@ footer{
     #navegador{
         display: none;
     }
+    .img{
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1400px){
